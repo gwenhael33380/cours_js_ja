@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  min-height: 300vh;
+}
+h1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  transition: 2s;
+}
+.popup {
+  background: salmon;
+  width: 300px;
+  padding: 5px;
+  border-radius: 10px;
+  position: fixed;
+  right: -330px;
+  transition: 0.4s ease;
+}
+.active {
+  filter: blur(4px);
+  height: 150px;
+  border-radius: 30px;
+  border: 3px solid pink;
+}
+@keyframes animBody {
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+label {
+  user-select: none;
+}
